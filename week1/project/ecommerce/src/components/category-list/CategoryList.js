@@ -7,10 +7,9 @@ function CategoryList({ categories, activeCategory, onCategoryClick }) {
       <div className="category__list">
         {categories.map((category) => (
           <button
-            className="active"
+            className={activeCategory === category ? 'active' : ''}
             key={category}
             category={category}
-            active={activeCategory === category}
             onClick={() => onCategoryClick(category)}
           >
             {category.replace('FAKE: ', '')}
