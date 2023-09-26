@@ -6,16 +6,15 @@ import allProductsData from './fake-data/all-products';
 import allCategoriesData from './fake-data/all-categories';
 
 function App() {
-  const [products] = useState(allProductsData);
   const [activeCategory, setActiveCategory] = useState(null);
   const [filteredProducts, setFilteredProducts] = useState(allProductsData);
 
   function filterProductsByCategory(category) {
     setActiveCategory(category);
     if (category === null) {
-      setFilteredProducts(products);
+      setFilteredProducts(allProductsData);
     } else {
-      const filtered = products.filter(
+      const filtered = allProductsData.filter(
         (product) =>
           product.category.replace('FAKE: ', '') ===
           category.replace('FAKE: ', '')
