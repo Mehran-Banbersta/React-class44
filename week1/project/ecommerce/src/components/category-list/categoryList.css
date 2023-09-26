@@ -9,14 +9,13 @@
   }
 }
 
-
 .category__list button {
   background-color: #efeff0;
   cursor: pointer;
   font-weight: 900;
   margin: 2px;
- height: 3rem;
- width: 9rem;
+  height: 3rem;
+  width: 9rem;
   border: none;
 }
 
@@ -24,16 +23,11 @@
   background-color: #d6d6d8;
 }
 
-.categories__item button.active {
-  background-color: #bdbdc1;
+.category__list button.active {
+  background-color: #bababe;
 }
-
 @media (max-width: 480px) {
   .category__list button {
     margin: 0 5px;
-    
-  
- 
-  
   }
 }
